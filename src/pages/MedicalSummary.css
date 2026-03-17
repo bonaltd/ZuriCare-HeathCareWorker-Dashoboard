@@ -1,0 +1,116 @@
+.medical-summary-page {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.summary-header {
+  margin-bottom: 2rem;
+}
+
+.summary-header .page-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.consent-meta {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.consent-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.summary-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.summary-section {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-card);
+}
+
+.summary-section h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.85rem;
+}
+
+.summary-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.summary-section li {
+  margin-bottom: 0.35rem;
+}
+
+.blood-type {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-primary);
+}
+
+.prescription-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.prescription-item {
+  padding: 1.1rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-primary);
+}
+
+.prescription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.status-active {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.status-completed {
+  background: var(--color-bg);
+  color: var(--color-text-muted);
+}
+
+.prescription-meta {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  margin: 0.5rem 0 0;
+}
+
+.emergency-contact p {
+  margin: 0.25rem 0;
+}

@@ -1,0 +1,131 @@
+.consent-page {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.consent-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-tab {
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-tab:hover {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary-light);
+}
+
+.filter-tab-active {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-mid) 100%);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.consent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.consent-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-card);
+  transition: all 0.2s;
+}
+
+.consent-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.consent-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.consent-card-header h3 {
+  font-size: 1rem;
+  margin: 0 0 0.25rem;
+}
+
+.consent-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.consent-badge-pending {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-hover);
+}
+
+.consent-badge-granted {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.consent-badge-denied {
+  background: var(--color-error-soft);
+  color: var(--color-error);
+}
+
+.consent-scopes {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.consent-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.consent-time {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.consent-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8125rem;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary-light);
+  color: var(--color-primary);
+}

@@ -1,0 +1,255 @@
+/* Health card – printable patient ID card */
+.health-card {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  background: linear-gradient(165deg, #0e4242 0%, #0b3434 40%, #082a2a 100%);
+  border-radius: 20px;
+  padding: 1.75rem 2rem;
+  color: #fff;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  overflow: hidden;
+}
+
+.health-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.health-card-brand {
+  flex-shrink: 0;
+}
+
+.health-card-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
+.health-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.98);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.health-card-body {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1.75rem;
+}
+
+.health-card-left {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+}
+
+.health-card-photo-wrap {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.health-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.health-card-photo-initials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, rgba(0, 206, 209, 0.2) 0%, rgba(102, 204, 0, 0.1) 100%);
+}
+
+.health-card-details {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0.15rem;
+}
+
+.health-card-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  margin: 0 0 0.85rem;
+  line-height: 1.25;
+  word-break: break-word;
+  color: #fff;
+}
+
+.health-card-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.health-card-row:last-of-type {
+  margin-bottom: 0;
+}
+
+.health-card-label {
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+}
+
+.health-card-value {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.health-card-qr-wrap {
+  flex-shrink: 0;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.health-card-qr {
+  display: block;
+  border-radius: 6px;
+}
+
+.health-card-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+  margin: 1.25rem 0;
+}
+
+.health-card-footer {
+  text-align: center;
+  padding-top: 0.15rem;
+}
+
+.health-card-id-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.6rem;
+}
+
+.health-card-id-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.health-card-tagline {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+/* Screen: card preview (e.g. on registration complete) */
+.health-card-preview-wrap {
+  margin: 1.75rem 0;
+  padding: 1.5rem;
+  background: rgba(0, 102, 102, 0.04);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 102, 102, 0.1);
+}
+
+.health-card-preview-wrap .health-card {
+  max-width: 520px;
+}
+
+/* Print: only show the card */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .printable-health-card-wrapper,
+  .printable-health-card-wrapper * {
+    visibility: visible;
+  }
+
+  .printable-health-card-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+  }
+
+  .printable-health-card-wrapper .health-card {
+    box-shadow: none;
+    max-width: 90mm;
+    padding: 5mm 6mm;
+  }
+
+  .printable-health-card-wrapper .health-card-logo {
+    height: 28px;
+  }
+
+  .printable-health-card-wrapper .health-card-title {
+    font-size: 1.2rem;
+  }
+
+  .printable-health-card-wrapper .health-card-photo-wrap {
+    width: 72px;
+    height: 72px;
+  }
+
+  .printable-health-card-wrapper .health-card-photo-initials {
+    font-size: 1.5rem;
+  }
+
+  .printable-health-card-wrapper .health-card-name {
+    font-size: 1rem;
+  }
+
+  .printable-health-card-wrapper .health-card-qr-wrap {
+    padding: 4px;
+  }
+
+  .printable-health-card-wrapper .health-card-qr {
+    width: 96px !important;
+    height: 96px !important;
+  }
+}

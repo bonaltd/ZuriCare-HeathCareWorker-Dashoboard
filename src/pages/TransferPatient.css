@@ -1,0 +1,340 @@
+.transfer-page {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.transfer-error {
+  padding: 1rem;
+  background: var(--color-error-soft);
+  border: 1px solid rgba(220, 38, 38, 0.3);
+  border-radius: var(--radius-md);
+  color: var(--color-error);
+  margin-bottom: 1rem;
+}
+
+.transfer-toolbar {
+  margin-bottom: 1.5rem;
+}
+
+.transfer-toolbar .filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.transfer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transfer-empty {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--color-bg-card);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-muted);
+}
+
+.transfer-empty svg {
+  color: var(--color-primary-light);
+  margin-bottom: 1rem;
+}
+
+.transfer-empty p {
+  margin: 0 0 0.5rem;
+}
+
+.transfer-empty-hint {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem !important;
+}
+
+.transfer-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  flex-wrap: wrap;
+}
+
+.transfer-card-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.transfer-route {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.transfer-clinic {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.transfer-country {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.transfer-arrow {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.transfer-patient {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.transfer-patient-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.transfer-patient-link:hover {
+  text-decoration: underline;
+}
+
+.transfer-reason {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0 0 0.5rem;
+}
+
+.transfer-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.transfer-status {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.transfer-status-pending {
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
+}
+
+.transfer-status-completed {
+  background: var(--color-success-soft);
+  color: var(--color-success);
+}
+
+.transfer-status-cancelled {
+  background: var(--color-error-soft);
+  color: var(--color-error);
+}
+
+.transfer-date {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.transfer-destination-section {
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-border-light);
+  margin-top: 0.5rem;
+}
+
+.transfer-section-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.transfer-patient-select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.transfer-patient-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.transfer-patient-tab {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  background: var(--color-bg);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.transfer-patient-tab:hover {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.transfer-patient-tab-active {
+  background: var(--color-bg-card);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.transfer-patient-select .searchable-select {
+  border: none;
+  border-radius: 0;
+}
+
+.transfer-patient-select .searchable-select-trigger {
+  border: none;
+  border-radius: 0;
+}
+
+.transfer-scan-area {
+  padding: 1rem;
+  background: var(--color-bg);
+}
+
+.transfer-scan-placeholder {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.transfer-scan-placeholder p {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.875rem;
+}
+
+.transfer-scan-active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.transfer-qr-reader {
+  width: 100%;
+  max-width: 280px;
+}
+
+.transfer-qr-reader video {
+  border-radius: var(--radius-md);
+}
+
+.transfer-scan-error {
+  margin: 0.5rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--color-error);
+}
+
+.transfer-scan-selected {
+  margin: 0.75rem 0 0;
+  font-size: 0.875rem;
+  color: var(--color-success);
+}
+
+.transfer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transfer-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.transfer-form .form-row-full {
+  grid-column: 1 / -1;
+}
+
+.transfer-form .form-group {
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .transfer-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.transfer-form label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.transfer-form select,
+.transfer-form input,
+.transfer-form textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 0.9375rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.transfer-page .modal {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border-light);
+}
+
+.transfer-page .modal h2 {
+  margin-bottom: 1.25rem;
+  color: var(--color-primary);
+}
+
+.modal-hint {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0 0 1rem;
+}
+
+.transfer-form .form-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border-light);
+  margin-top: 0.25rem;
+}

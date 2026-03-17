@@ -1,0 +1,89 @@
+.accept-invite-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.accept-invite-card {
+  max-width: 420px;
+  width: 100%;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.accept-invite-card h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.375rem;
+  color: var(--color-primary);
+}
+
+.accept-invite-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accept-invite-loading .spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.accept-invite-icon {
+  margin-bottom: 1rem;
+}
+
+.accept-invite-icon.success {
+  color: var(--color-success);
+}
+
+.accept-invite-icon.error {
+  color: var(--color-error);
+}
+
+.accept-invite-card p {
+  margin: 0 0 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.accept-invite-card .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.35rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.accept-invite-card .btn-primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-mid) 100%);
+  color: white;
+  border: none;
+}
+
+.accept-invite-card .btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-primary-hover) 0%, var(--color-primary) 100%);
+}
+
+.accept-invite-card .btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+
+.accept-invite-card .btn-outline:hover {
+  background: var(--color-primary-soft);
+}

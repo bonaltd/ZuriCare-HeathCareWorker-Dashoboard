@@ -1,0 +1,321 @@
+.registration-page {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--color-primary);
+}
+
+.step-indicator {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.step-indicator-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.step-active .step-number {
+  border-color: var(--color-primary);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-mid) 100%);
+  color: white;
+}
+
+.step-done .step-number {
+  border-color: var(--color-success);
+  background: var(--color-success);
+  color: white;
+}
+
+.step-label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.step-active .step-label {
+  color: var(--color-primary);
+}
+
+.registration-form-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-card);
+}
+
+.form-step {
+  margin-bottom: 1.5rem;
+}
+
+.form-step h2 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.registration-complete-step h2 {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.registration-complete-subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.form-hint {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: -0.25rem 0 1rem;
+}
+
+.form-step .form-group {
+  margin-bottom: 1rem;
+}
+
+.form-step .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.form-step .form-group input,
+.form-step .form-group select {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s;
+}
+
+.form-step .form-group input:focus,
+.form-step .form-group select:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.form-step .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-step .form-row-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 600px) {
+  .form-step .form-row {
+    grid-template-columns: 1fr;
+  }
+  .form-step .form-row-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tag-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-input input {
+  flex: 1;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.6rem;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 0.25rem;
+}
+
+.tag button:hover {
+  opacity: 0.8;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.form-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.zuri-id-display {
+  text-align: center;
+  padding: 1.75rem;
+  background: linear-gradient(135deg, var(--color-primary-soft) 0%, rgba(102, 204, 0, 0.08) 100%);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-primary-light);
+}
+
+.zuri-id-display svg {
+  color: var(--color-primary);
+}
+
+.zuri-id-display p {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.zuri-id-large {
+  font-size: 1.35rem;
+  font-weight: 700;
+  display: block;
+  color: var(--color-primary);
+}
+
+.qr-placeholder {
+  aspect-ratio: 1;
+  max-width: 200px;
+  margin: 0 auto 1.5rem;
+  background: var(--color-bg);
+  border: 2px dashed var(--color-primary-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-placeholder-inner {
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.qr-placeholder-inner svg {
+  color: var(--color-primary);
+}
+
+.qr-placeholder-inner p {
+  margin: 0.5rem 0 0;
+  font-size: 0.8125rem;
+}
+
+.completion-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Patient photo – take or upload */
+.patient-photo-group {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.patient-photo-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.patient-photo-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.patient-photo-preview-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.patient-photo-preview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.patient-photo-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.patient-photo-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
